@@ -14,7 +14,7 @@ class RecipeFetcher(BaseTool):
 
     def _run(self, ingredients: str) -> str:
         """Fetch recipes from Spoonacular API."""
-        api_key = "ed1823d3f7224cdda6e28db00bedaedd"  # Replace this with your actual API key
+        api_key = "YOUR_API_KEY"  # Replace this with your actual API key
         response = requests.get(f"https://api.spoonacular.com/recipes/findByIngredients?ingredients={ingredients}&apiKey={api_key}")
         
         if response.status_code == 200:
